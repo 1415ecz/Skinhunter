@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Просмотр товара - SkinMarket</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="item.css">
+</head>
+<body class="item-page">
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>SkinMarket</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="market.html" class="active">Маркет</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                </ul>
+            </nav>
+            <div class="user-actions">
+                <div class="balance">
+                    <span>Баланс:</span>
+                    <span class="balance-amount">0.00 ₽</span>
+                    <button class="btn btn-primary btn-sm btn-top-up">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+                <a href="#" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="game-nav">
+        <div class="container">
+            <div class="game-tabs">
+                <a href="#" class="active">
+                    <img src="фото/cs2-icon.png" alt="CS2">
+                    CS2
+                </a>
+                <a href="#">
+                    <img src="фото/dota2-icon.png" alt="Dota 2">
+                    Dota 2
+                </a>
+                <a href="#">
+                    <img src="фото/rust-icon.png" alt="Rust">
+                    Rust
+                </a>
+                <a href="#">
+                    <img src="фото/tf2-icon.png" alt="TF2">
+                    TF2
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <section class="item-breadcrumbs">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="market.html">Маркет</a></li>
+                <li><a href="#" id="category-link">Категория</a></li>
+                <li id="item-name">Загрузка...</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="item-details">
+        <div class="container">
+            <div class="item-grid">
+                <div class="item-gallery">
+                    <div class="item-main-image">
+                        <img src="фото/placeholder.png" alt="Загрузка..." id="main-image">
+                        <div class="item-float" id="item-float">Float: 0.0000</div>
+                        <div class="item-discount" id="item-discount">-0%</div>
+                    </div>
+                    <div class="item-thumbnails" id="item-thumbnails">
+                        <!-- Миниатюры будут добавлены динамически -->
+                    </div>
+                    <div class="item-actions">
+                        <button class="btn-inspect">
+                            <i class="fas fa-cube"></i>
+                            3D Инспект
+                        </button>
+                        <button class="btn-screenshot">
+                            <i class="fas fa-image"></i>
+                            Скриншоты
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="item-info">
+                    <h1 class="item-title" id="item-title">Загрузка...</h1>
+                    <div class="item-meta">
+                        <div class="item-category" id="item-category">Категория</div>
+                        <div class="item-rarity" id="item-rarity">Редкость</div>
+                        <div class="item-collection" id="item-collection">Коллекция</div>
+                    </div>
+                    
+                    <div class="item-properties">
+                        <div class="property">
+                            <span class="property-name">Внешний вид:</span>
+                            <span class="property-value" id="item-exterior">Загрузка...</span>
+                        </div>
+                        <div class="property">
+                            <span class="property-name">Float:</span>
+                            <span class="property-value" id="item-float-value">0.0000</span>
+                        </div>
+                        <div class="property">
+                            <span class="property-name">Паттерн:</span>
+                            <span class="property-value" id="item-pattern">#000</span>
+                        </div>
+                        <div class="property">
+                            <span class="property-name">Торговый запрет:</span>
+                            <span class="property-value" id="item-trade-lock">Нет</span>
+                        </div>
+                    </div>
+                    
+                    <div class="item-stickers" id="stickers-container">
+                        <h3>Наклейки:</h3>
+                        <div class="stickers-list" id="stickers-list">
+                            <!-- Наклейки будут добавлены динамически -->
+                        </div>
+                    </div>
+                    
+                    <div class="item-pricing">
+                        <div class="price-comparison">
+                            <div class="steam-price">
+                                <span class="price-label">Цена в Steam:</span>
+                                <span class="price-value" id="steam-price">₽ 0.00</span>
+                            </div>
+                            <div class="our-price">
+                                <span class="price-label">Наша цена:</span>
+                                <span class="price-value" id="our-price">₽ 0.00</span>
+                                <span class="price-discount" id="price-discount">-0%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="item-purchase">
+                            <button class="btn btn-primary btn-add-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                                Добавить в корзину
+                            </button>
+                            <button class="btn btn-outline btn-buy-now">
+                                <i class="fas fa-bolt"></i>
+                                Купить сейчас
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="item-delivery">
+                        <h3>Информация о доставке</h3>
+                        <ul class="delivery-info">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Мгновенная доставка</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Безопасная сделка</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Гарантия возврата</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="item-description">
+        <div class="container">
+            <div class="description-tabs">
+                <button class="tab-btn active" data-tab="description">Описание</button>
+                <button class="tab-btn" data-tab="float-info">Float информация</button>
+                <button class="tab-btn" data-tab="delivery">Доставка</button>
+            </div>
+            
+            <div class="tab-content active" id="description">
+                <h3>Описание скина</h3>
+                <div id="item-description">
+                    <p>Загрузка описания...</p>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="float-info">
+                <h3>Float информация</h3>
+                <div class="float-bar-container">
+                    <div class="float-bar">
+                        <div class="float-range fn" title="Factory New (0.00-0.07)"></div>
+                        <div class="float-range mw" title="Minimal Wear (0.07-0.15)"></div>
+                        <div class="float-range ft" title="Field-Tested (0.15-0.38)"></div>
+                        <div class="float-range ww" title="Well-Worn (0.38-0.45)"></div>
+                        <div class="float-range bs" title="Battle-Scarred (0.45-1.00)"></div>
+                        <div class="float-pointer" id="float-pointer" style="left: 0%"></div>
+                    </div>
+                    <div class="float-labels">
+                        <span>0.00</span>
+                        <span>0.07</span>
+                        <span>0.15</span>
+                        <span>0.38</span>
+                        <span>0.45</span>
+                        <span>1.00</span>
+                    </div>
+                </div>
+                <div class="float-details">
+                    <p>Float Value: <strong id="float-value-detail">0.0000</strong></p>
+                    <p>Категория: <strong id="float-category">Загрузка...</strong></p>
+                    <p>Диапазон для <span id="float-category-range">категории</span>: <strong id="float-range">0.00 - 0.00</strong></p>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="delivery">
+                <h3>Информация о доставке</h3>
+                <div class="delivery-steps">
+                    <div class="delivery-step">
+                        <div class="step-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="step-content">
+                            <h4>1. Добавьте товар в корзину</h4>
+                            <p>Нажмите кнопку "Добавить в корзину" или "Купить сейчас" для мгновенной покупки.</p>
+                        </div>
+                    </div>
+                    <div class="delivery-step">
+                        <div class="step-icon">
+                            <i class="fas fa-credit-card"></i>
+                        </div>
+                        <div class="step-content">
+                            <h4>2. Оплатите заказ</h4>
+                            <p>Выберите удобный способ оплаты и завершите транзакцию.</p>
+                        </div>
+                    </div>
+                    <div class="delivery-step">
+                        <div class="step-icon">
+                            <i class="fas fa-exchange-alt"></i>
+                        </div>
+                        <div class="step-content">
+                            <h4>3. Получите скин</h4>
+                            <p>После оплаты скин будет автоматически доставлен в ваш инвентарь Steam.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="similar-items">
+        <div class="container">
+            <h2 class="section-title">Похожие скины</h2>
+            <div class="skins-grid" id="similar-items">
+                <!-- Похожие товары будут добавлены динамически -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>SkinMarket</h3>
+                    <p>Ваш надежный маркетплейс для покупки и продажи игровых скинов. Мы предлагаем лучшие цены, мгновенную доставку и безопасные сделки.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Быстрые ссылки</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="market.html">Маркет</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Игры</h3>
+                    <ul>
+                        <li><a href="#">CS:GO</a></li>
+                        <li><a href="#">Dota 2</a></li>
+                        <li><a href="#">Fortnite</a></li>
+                        <li><a href="#">Valorant</a></li>
+                        <li><a href="#">PUBG</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Поддержка</h3>
+                    <ul>
+                        <li><a href="#">Центр помощи</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Условия использования</a></li>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Связаться с поддержкой</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 SkinMarket. Все права защищены.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-paypal"></i>
+                    <i class="fab fa-bitcoin"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="item.js"></script>
+</body>
+</html> 

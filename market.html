@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS2 Маркет скинов - SkinMarket</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="market.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="market-page">
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>SkinMarket</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="#" class="active">Маркет</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                </ul>
+            </nav>
+            <div class="user-actions">
+                <div class="balance">
+                    <span class="balance-amount">0.00 ₽</span>
+                    <button class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Пополнить</button>
+                </div>
+                <div class="cart">
+                    <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+                </div>
+                <a href="login.html" class="btn btn-outline"><i class="fas fa-sign-in-alt"></i> Вход</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="game-nav">
+        <div class="container">
+            <ul class="game-tabs">
+                <li><a href="#" class="active"><img src="https://via.placeholder.com/20x20" alt="CS2"> CS2</a></li>
+                <li><a href="#"><img src="https://via.placeholder.com/20x20" alt="Dota 2"> Dota 2</a></li>
+                <li><a href="#"><img src="https://via.placeholder.com/20x20" alt="Rust"> Rust</a></li>
+                <li><a href="#"><img src="https://via.placeholder.com/20x20" alt="TF2"> TF2</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="market-content">
+        <div class="container">
+            <div class="market-header">
+                <h1>Маркет CS2</h1>
+                <div class="market-stats">
+                    <div class="stat">
+                        <span class="stat-label">Предметов:</span>
+                        <span class="stat-value">15,279</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Предложений:</span>
+                        <span class="stat-value">678.5K</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Средняя скидка:</span>
+                        <span class="stat-value">24.32%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="market-grid">
+                <div class="market-sidebar">
+                    <div class="filter-section">
+                        <div class="filter-header">
+                            <h3>Фильтры</h3>
+                            <button class="btn btn-text btn-sm">Сбросить все</button>
+                        </div>
+                        
+                        <div class="filter-group">
+                            <h4>Категория</h4>
+                            <div class="filter-options">
+                                <label class="filter-option">
+                                    <input type="checkbox">
+                                    <span>Все</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox">
+                                    <span>Ножи</span>
+                                    <span class="count">231</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox">
+                                    <span>Перчатки</span>
+                                    <span class="count">169</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox">
+                                    <span>Пистолеты</span>
+                                    <span class="count">412</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox">
+                                    <span>Винтовки</span>
+                                    <span class="count">287</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox">
+                                    <span>Снайперские винтовки</span>
+                                    <span class="count">156</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox">
+                                    <span>Пистолеты-пулеметы</span>
+                                    <span class="count">198</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox">
+                                    <span>Дробовики</span>
+                                    <span class="count">87</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox">
+                                    <span>Пулеметы</span>
+                                    <span class="count">45</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="filter-group">
+                            <h4>Редкость</h4>
+                            <div class="filter-options">
+                                <label class="filter-option">
+                                    <input type="checkbox">
+                                    <span class="rarity consumer">Потребительского класса</span>
+                                    <span class="count">532</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox">
+                                    <span class="rarity industrial">Промышленного класса</span>
+                                    <span class="count">423</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox">
+                                    <span class="rarity mil-spec">Армейского класса</span>
+                                    <span class="count">321</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox">
+                                    <span class="rarity restricted">Запрещенного класса</span>
+                                    <span class="count">256</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox">
+                                    <span class="rarity classified">Засекреченного класса</span>
+                                    <span class="count">156</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox">
+                                    <span class="rarity covert">Тайного класса</span>
+                                    <span class="count">89</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox">
+                                    <span class="rarity contraband">Контрабанда</span>
+                                    <span class="count">12</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="filter-group">
+                            <h4>Качество</h4>
+                            <div class="filter-options">
+                                <label class="filter-option">
+                                    <input type="checkbox">
+                                    <span class="quality">Прямо с завода</span>
+                                    <span class="count">432</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox">
+                                    <span class="quality">Немного поношенное</span>
+                                    <span class="count">523</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox">
+                                    <span class="quality">После полевых испытаний</span>
+                                    <span class="count">621</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox">
+                                    <span class="quality">Поношенное</span>
+                                    <span class="count">356</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox">
+                                    <span class="quality">Закаленное в боях</span>
+                                    <span class="count">189</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="filter-group">
+                            <h4>Цена</h4>
+                            <div class="price-range">
+                                <div class="price-slider-container">
+                                    <input type="range" min="0" max="100000" value="50000" class="price-slider">
+                                    <div class="price-labels">
+                                        <span>0 ₽</span>
+                                        <span>100,000 ₽</span>
+                                    </div>
+                                </div>
+                                <div class="price-inputs">
+                                    <input type="number" placeholder="от" min="0" max="100000">
+                                    <span>-</span>
+                                    <input type="number" placeholder="до" min="0" max="100000">
+                                </div>
+                                <button class="btn btn-primary btn-full">Применить</button>
+                            </div>
+                        </div>
+
+                        <div class="filter-group">
+                            <h4>Стикеры</h4>
+                            <div class="sticker-filter">
+                                <label class="filter-option">
+                                    <input type="checkbox">
+                                    <span>Только со стикерами</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox">
+                                    <span>Только с редкими стикерами</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="filter-group">
+                            <h4>Float</h4>
+                            <div class="float-range">
+                                <div class="float-slider-container">
+                                    <input type="range" min="0" max="100" value="50" class="float-slider">
+                                    <div class="float-labels">
+                                        <span>0.00</span>
+                                        <span>1.00</span>
+                                    </div>
+                                </div>
+                                <div class="float-inputs">
+                                    <input type="number" placeholder="от" min="0" max="1" step="0.01">
+                                    <span>-</span>
+                                    <input type="number" placeholder="до" min="0" max="1" step="0.01">
+                                </div>
+                                <button class="btn btn-primary btn-full">Применить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="market-main">
+                    <div class="market-controls">
+                        <div class="market-search">
+                            <input type="text" placeholder="Поиск скинов...">
+                            <button><i class="fas fa-search"></i></button>
+                        </div>
+                        <div class="market-sort">
+                            <label>Сортировать по:</label>
+                            <select>
+                                <option>Популярности</option>
+                                <option>Цена: по возрастанию</option>
+                                <option>Цена: по убыванию</option>
+                                <option>Скидка: по возрастанию</option>
+                                <option>Скидка: по убыванию</option>
+                                <option>Новизне</option>
+                                <option>Float: по возрастанию</option>
+                                <option>Float: по убыванию</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="market-items">
+                        <div class="skin-card">
+                            <div class="skin-image">
+                                <a href="item.html?id=dragon-lore">
+                                    <img src="https://via.placeholder.com/300x200" alt="AWP | Dragon Lore">
+                                </a>
+                                <div class="skin-float">Float: 0.0132</div>
+                                <div class="skin-discount">-15%</div>
+                                <div class="skin-actions">
+                                    <button class="btn-inspect"><i class="fas fa-search"></i></button>
+                                    <button class="btn-screenshot"><i class="fas fa-camera"></i></button>
+                                </div>
+                            </div>
+                            <div class="skin-info">
+                                <h3><a href="item.html?id=dragon-lore">AWP | Dragon Lore</a></h3>
+                                <p class="skin-exterior">Прямо с завода</p>
+                                <div class="skin-meta">
+                                    <div class="skin-prices">
+                                        <span class="skin-price-steam">1,529.99 ₽</span>
+                                        <span class="skin-price">1,299.99 ₽</span>
+                                    </div>
+                                    <button class="btn btn-primary btn-add-cart"><i class="fas fa-cart-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skin-card">
+                            <div class="skin-image">
+                                <a href="item.html?id=fade">
+                                    <img src="https://via.placeholder.com/300x200" alt="Karambit | Fade">
+                                </a>
+                                <div class="skin-float">Float: 0.0078</div>
+                                <div class="skin-discount">-12%</div>
+                                <div class="skin-actions">
+                                    <button class="btn-inspect"><i class="fas fa-search"></i></button>
+                                    <button class="btn-screenshot"><i class="fas fa-camera"></i></button>
+                                </div>
+                            </div>
+                            <div class="skin-info">
+                                <h3><a href="item.html?id=fade">Karambit | Fade</a></h3>
+                                <p class="skin-exterior">Прямо с завода</p>
+                                <div class="skin-meta">
+                                    <div class="skin-prices">
+                                        <span class="skin-price-steam">999.99 ₽</span>
+                                        <span class="skin-price">879.99 ₽</span>
+                                    </div>
+                                    <button class="btn btn-primary btn-add-cart"><i class="fas fa-cart-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skin-card">
+                            <div class="skin-image">
+                                <a href="item.html?id=asiimov">
+                                    <img src="https://via.placeholder.com/300x200" alt="AK-47 | Fire Serpent">
+                                </a>
+                                <div class="skin-float">Float: 0.0821</div>
+                                <div class="skin-discount">-18%</div>
+                                <div class="skin-actions">
+                                    <button class="btn-inspect"><i class="fas fa-search"></i></button>
+                                    <button class="btn-screenshot"><i class="fas fa-camera"></i></button>
+                                </div>
+                            </div>
+                            <div class="skin-info">
+                                <h3><a href="item.html?id=asiimov">AK-47 | Fire Serpent</a></h3>
+                                <p class="skin-exterior">Немного поношенное</p>
+                                <div class="skin-meta">
+                                    <div class="skin-prices">
+                                        <span class="skin-price-steam">699.99 ₽</span>
+                                        <span class="skin-price">574.99 ₽</span>
+                                    </div>
+                                    <button class="btn btn-primary btn-add-cart"><i class="fas fa-cart-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skin-card">
+                            <div class="skin-image">
+                                <a href="item.html?id=howl">
+                                    <img src="https://via.placeholder.com/300x200" alt="M4A4 | Howl">
+                                </a>
+                                <div class="skin-float">Float: 0.0356</div>
+                                <div class="skin-discount">-20%</div>
+                                <div class="skin-stickers">
+                                    <img src="https://via.placeholder.com/20x20" alt="Sticker">
+                                    <img src="https://via.placeholder.com/20x20" alt="Sticker">
+                                    <img src="https://via.placeholder.com/20x20" alt="Sticker">
+                                </div>
+                                <div class="skin-actions">
+                                    <button class="btn-inspect"><i class="fas fa-search"></i></button>
+                                    <button class="btn-screenshot"><i class="fas fa-camera"></i></button>
+                                </div>
+                            </div>
+                            <div class="skin-info">
+                                <h3><a href="item.html?id=howl">M4A4 | Howl</a></h3>
+                                <p class="skin-exterior">Прямо с завода</p>
+                                <div class="skin-meta">
+                                    <div class="skin-prices">
+                                        <span class="skin-price-steam">1,249.99 ₽</span>
+                                        <span class="skin-price">999.99 ₽</span>
+                                    </div>
+                                    <button class="btn btn-primary btn-add-cart"><i class="fas fa-cart-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skin-card">
+                            <div class="skin-image">
+                                <a href="item.html?id=glock-fade">
+                                    <img src="https://via.placeholder.com/300x200" alt="Glock-18 | Fade">
+                                </a>
+                                <div class="skin-float">Float: 0.0123</div>
+                                <div class="skin-discount">-15%</div>
+                                <div class="skin-actions">
+                                    <button class="btn-inspect"><i class="fas fa-search"></i></button>
+                                    <button class="btn-screenshot"><i class="fas fa-camera"></i></button>
+                                </div>
+                            </div>
+                            <div class="skin-info">
+                                <h3><a href="item.html?id=glock-fade">Glock-18 | Fade</a></h3>
+                                <p class="skin-exterior">Прямо с завода</p>
+                                <div class="skin-meta">
+                                    <div class="skin-prices">
+                                        <span class="skin-price-steam">399.99 ₽</span>
+                                        <span class="skin-price">339.99 ₽</span>
+                                    </div>
+                                    <button class="btn btn-primary btn-add-cart"><i class="fas fa-cart-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skin-card">
+                            <div class="skin-image">
+                                <a href="item.html?id=kill-confirmed">
+                                    <img src="https://via.placeholder.com/300x200" alt="USP-S | Kill Confirmed">
+                                </a>
+                                <div class="skin-float">Float: 0.0723</div>
+                                <div class="skin-discount">-22%</div>
+                                <div class="skin-stickers">
+                                    <img src="https://via.placeholder.com/20x20" alt="Sticker">
+                                    <img src="https://via.placeholder.com/20x20" alt="Sticker">
+                                </div>
+                                <div class="skin-actions">
+                                    <button class="btn-inspect"><i class="fas fa-search"></i></button>
+                                    <button class="btn-screenshot"><i class="fas fa-camera"></i></button>
+                                </div>
+                            </div>
+                            <div class="skin-info">
+                                <h3><a href="item.html?id=kill-confirmed">USP-S | Kill Confirmed</a></h3>
+                                <p class="skin-exterior">Немного поношенное</p>
+                                <div class="skin-meta">
+                                    <div class="skin-prices">
+                                        <span class="skin-price-steam">249.99 ₽</span>
+                                        <span class="skin-price">194.99 ₽</span>
+                                    </div>
+                                    <button class="btn btn-primary btn-add-cart"><i class="fas fa-cart-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skin-card">
+                            <div class="skin-image">
+                                <a href="item.html?id=crimson-web">
+                                    <img src="https://via.placeholder.com/300x200" alt="Butterfly Knife | Crimson Web">
+                                </a>
+                                <div class="skin-float">Float: 0.1523</div>
+                                <div class="skin-discount">-10%</div>
+                                <div class="skin-actions">
+                                    <button class="btn-inspect"><i class="fas fa-search"></i></button>
+                                    <button class="btn-screenshot"><i class="fas fa-camera"></i></button>
+                                </div>
+                            </div>
+                            <div class="skin-info">
+                                <h3><a href="item.html?id=crimson-web">Butterfly Knife | Crimson Web</a></h3>
+                                <p class="skin-exterior">После полевых испытаний</p>
+                                <div class="skin-meta">
+                                    <div class="skin-prices">
+                                        <span class="skin-price-steam">899.99 ₽</span>
+                                        <span class="skin-price">809.99 ₽</span>
+                                    </div>
+                                    <button class="btn btn-primary btn-add-cart"><i class="fas fa-cart-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skin-card">
+                            <div class="skin-image">
+                                <a href="item.html?id=asiimov-awp">
+                                    <img src="https://via.placeholder.com/300x200" alt="AWP | Asiimov">
+                                </a>
+                                <div class="skin-float">Float: 0.2134</div>
+                                <div class="skin-discount">-25%</div>
+                                <div class="skin-stickers">
+                                    <img src="https://via.placeholder.com/20x20" alt="Sticker">
+                                    <img src="https://via.placeholder.com/20x20" alt="Sticker">
+                                    <img src="https://via.placeholder.com/20x20" alt="Sticker">
+                                    <img src="https://via.placeholder.com/20x20" alt="Sticker">
+                                </div>
+                                <div class="skin-actions">
+                                    <button class="btn-inspect"><i class="fas fa-search"></i></button>
+                                    <button class="btn-screenshot"><i class="fas fa-camera"></i></button>
+                                </div>
+                            </div>
+                            <div class="skin-info">
+                                <h3><a href="item.html?id=asiimov-awp">AWP | Asiimov</a></h3>
+                                <p class="skin-exterior">После полевых испытаний</p>
+                                <div class="skin-meta">
+                                    <div class="skin-prices">
+                                        <span class="skin-price-steam">199.99 ₽</span>
+                                        <span class="skin-price">149.99 ₽</span>
+                                    </div>
+                                    <button class="btn btn-primary btn-add-cart"><i class="fas fa-cart-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="market-pagination">
+                        <a href="#" class="pagination-prev disabled"><i class="fas fa-chevron-left"></i></a>
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <span>...</span>
+                        <a href="#">42</a>
+                        <a href="#" class="pagination-next"><i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="market-features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Безопасные платежи</h3>
+                        <p>Все транзакции защищены современными технологиями шифрования</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Мгновенная доставка</h3>
+                        <p>Получайте скины сразу после оплаты через нашу автоматическую систему</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-tag"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Лучшие цены</h3>
+                        <p>Скидки до 30% от рыночной стоимости Steam</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Поддержка 24/7</h3>
+                        <p>Наша команда всегда готова помочь с любыми вопросами</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>SkinMarket</h3>
+                    <p>Ведущая площадка для игровых скинов. Покупайте и обменивайтесь с уверенностью.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Быстрые ссылки</h3>
+                    <ul>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Маркет</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Игры</h3>
+                    <ul>
+                        <li><a href="#">CS:GO</a></li>
+                        <li><a href="#">Dota 2</a></li>
+                        <li><a href="#">Rust</a></li>
+                        <li><a href="#">TF2</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Поддержка</h3>
+                    <ul>
+                        <li><a href="#">Центр помощи</a></li>
+                        <li><a href="#">ЧЗВ</a></li>
+                        <li><a href="#">Условия использования</a></li>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Связаться с поддержкой</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 SkinMarket. Все права защищены.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-bitcoin"></i>
+                    <i class="fab fa-ethereum"></i>
+                    <i class="fab fa-cc-apple-pay"></i>
+                    <i class="fab fa-google-pay"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="market.js"></script>
+</body>
+</html> 

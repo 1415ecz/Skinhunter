@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkinMarket - Маркетплейс игровых скинов</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="home-page">
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>SkinMarket</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Главная</a></li>
+                    <li><a href="market.html">Маркет</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                </ul>
+            </nav>
+            <div class="user-actions">
+                <div class="balance">
+                    <span class="balance-amount">0.00 ₽</span>
+                    <button class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Пополнить</button>
+                </div>
+                <div class="cart">
+                    <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+                </div>
+                <a href="login.html" class="btn btn-outline"><i class="fas fa-sign-in-alt"></i> Вход</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="game-nav">
+        <div class="container">
+            <ul class="game-tabs">
+                <li><a href="#" class="active"><img src="https://via.placeholder.com/20x20" alt="CS2"> CS2</a></li>
+                <li><a href="#"><img src="https://via.placeholder.com/20x20" alt="Dota 2"> Dota 2</a></li>
+                <li><a href="#"><img src="https://via.placeholder.com/20x20" alt="Rust"> Rust</a></li>
+                <li><a href="#"><img src="https://via.placeholder.com/20x20" alt="TF2"> TF2</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Лучший маркетплейс игровых скинов</h1>
+                <p>Покупайте премиум игровые скины легко и безопасно со скидкой до 30%</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-value">15,279+</span>
+                        <span class="stat-label">Уникальных скинов</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">678.5K+</span>
+                        <span class="stat-label">Предложений</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">24.32%</span>
+                        <span class="stat-label">Средняя скидка</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="market.html" class="btn btn-primary btn-large">Перейти в маркет</a>
+                    <a href="login.html" class="btn btn-outline btn-large">Войти через Steam</a>
+                </div>
+            </div>
+            <div class="hero-image">
+             
+            </div>
+        </div>
+    </section>
+
+    <section class="popular-categories">
+        <div class="container">
+            <h2 class="section-title">Популярные категории</h2>
+            <div class="categories-grid">
+                <a href="market.html" class="category-card">
+                    <div class="category-image">
+                        <img src="фото/нож.png" alt="Ножи">
+                    </div>
+                    <h3>Ножи</h3>
+                    <p>231 предметов</p>
+                </a>
+                <a href="market.html" class="category-card">
+                    <div class="category-image">
+                        <img src="https://via.placeholder.com/150x100" alt="AWP">
+                    </div>
+                    <h3>AWP</h3>
+                    <p>156 предметов</p>
+                </a>
+                <a href="market.html" class="category-card">
+                    <div class="category-image">
+                        <img src="https://via.placeholder.com/150x100" alt="AK-47">
+                    </div>
+                    <h3>AK-47</h3>
+                    <p>189 предметов</p>
+                </a>
+                <a href="market.html" class="category-card">
+                    <div class="category-image">
+                        <img src="https://via.placeholder.com/150x100" alt="Перчатки">
+                    </div>
+                    <h3>Перчатки</h3>
+                    <p>169 предметов</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-skins">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Популярные скины</h2>
+                <a href="market.html" class="view-all">Смотреть все <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="skins-grid">
+                <div class="skin-card">
+                    <div class="skin-image">
+                        <img src="https://via.placeholder.com/300x200" alt="AWP | Dragon Lore">
+                        <div class="skin-float">Float: 0.0132</div>
+                        <div class="skin-discount">-15%</div>
+                        <div class="skin-actions">
+                            <button class="btn-inspect"><i class="fas fa-search"></i></button>
+                            <button class="btn-screenshot"><i class="fas fa-camera"></i></button>
+                        </div>
+                    </div>
+                    <div class="skin-info">
+                        <h3>AWP | Dragon Lore</h3>
+                        <p class="skin-exterior">Прямо с завода</p>
+                        <div class="skin-meta">
+                            <div class="skin-prices">
+                                <span class="skin-price-steam">1,529.99 ₽</span>
+                                <span class="skin-price">1,299.99 ₽</span>
+                            </div>
+                            <button class="btn btn-primary btn-add-cart"><i class="fas fa-cart-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="skin-card">
+                    <div class="skin-image">
+                        <img src="https://via.placeholder.com/300x200" alt="Karambit | Fade">
+                        <div class="skin-float">Float: 0.0078</div>
+                        <div class="skin-discount">-12%</div>
+                        <div class="skin-actions">
+                            <button class="btn-inspect"><i class="fas fa-search"></i></button>
+                            <button class="btn-screenshot"><i class="fas fa-camera"></i></button>
+                        </div>
+                    </div>
+                    <div class="skin-info">
+                        <h3>Karambit | Fade</h3>
+                        <p class="skin-exterior">Прямо с завода</p>
+                        <div class="skin-meta">
+                            <div class="skin-prices">
+                                <span class="skin-price-steam">999.99 ₽</span>
+                                <span class="skin-price">879.99 ₽</span>
+                            </div>
+                            <button class="btn btn-primary btn-add-cart"><i class="fas fa-cart-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="skin-card">
+                    <div class="skin-image">
+                        <img src="https://via.placeholder.com/300x200" alt="AK-47 | Fire Serpent">
+                        <div class="skin-float">Float: 0.0821</div>
+                        <div class="skin-discount">-18%</div>
+                        <div class="skin-actions">
+                            <button class="btn-inspect"><i class="fas fa-search"></i></button>
+                            <button class="btn-screenshot"><i class="fas fa-camera"></i></button>
+                        </div>
+                    </div>
+                    <div class="skin-info">
+                        <h3>AK-47 | Fire Serpent</h3>
+                        <p class="skin-exterior">Немного поношенное</p>
+                        <div class="skin-meta">
+                            <div class="skin-prices">
+                                <span class="skin-price-steam">699.99 ₽</span>
+                                <span class="skin-price">574.99 ₽</span>
+                            </div>
+                            <button class="btn btn-primary btn-add-cart"><i class="fas fa-cart-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="skin-card">
+                    <div class="skin-image">
+                        <img src="https://via.placeholder.com/300x200" alt="M4A4 | Howl">
+                        <div class="skin-float">Float: 0.0356</div>
+                        <div class="skin-discount">-20%</div>
+                        <div class="skin-stickers">
+                            <img src="https://via.placeholder.com/20x20" alt="Sticker">
+                            <img src="https://via.placeholder.com/20x20" alt="Sticker">
+                            <img src="https://via.placeholder.com/20x20" alt="Sticker">
+                        </div>
+                        <div class="skin-actions">
+                            <button class="btn-inspect"><i class="fas fa-search"></i></button>
+                            <button class="btn-screenshot"><i class="fas fa-camera"></i></button>
+                        </div>
+                    </div>
+                    <div class="skin-info">
+                        <h3>M4A4 | Howl</h3>
+                        <p class="skin-exterior">Прямо с завода</p>
+                        <div class="skin-meta">
+                            <div class="skin-prices">
+                                <span class="skin-price-steam">1,249.99 ₽</span>
+                                <span class="skin-price">999.99 ₽</span>
+                            </div>
+                            <button class="btn btn-primary btn-add-cart"><i class="fas fa-cart-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">Как это работает</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Выберите скин</h3>
+                        <p>Просмотрите нашу обширную коллекцию игровых скинов из различных популярных игр</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Добавьте в корзину</h3>
+                        <p>Выберите понравившиеся скины и добавьте их в корзину для оформления заказа</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Оплатите заказ</h3>
+                        <p>Оплачивайте безопасно, используя наши надежные способы оплаты с защитой покупателя</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Получите скины</h3>
+                        <p>Получайте купленные скины мгновенно в вашем игровом инвентаре</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="market-features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Безопасные платежи</h3>
+                        <p>Все транзакции защищены современными технологиями шифрования</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Мгновенная доставка</h3>
+                        <p>Получайте скины сразу после оплаты через нашу автоматическую систему</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-tag"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Лучшие цены</h3>
+                        <p>Скидки до 30% от рыночной стоимости Steam</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Поддержка 24/7</h3>
+                        <p>Наша команда всегда готова помочь с любыми вопросами</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Что говорят наши пользователи</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"SkinMarket предлагает лучшие цены и выбор, которые я видел. Транзакция прошла гладко, и я получил свой скин для AWP мгновенно!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://via.placeholder.com/50x50" alt="Пользователь">
+                        <div>
+                            <h4>Алекс Джонсон</h4>
+                            <p>Игрок CS:GO</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"Обслуживание клиентов превосходное. Они помогли мне решить проблему с обменом за считанные минуты!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://via.placeholder.com/50x50" alt="Пользователь">
+                        <div>
+                            <h4>Майк Томпсон</h4>
+                            <p>Игрок Valorant</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"Отличный выбор скинов по разумным ценам. Уже несколько раз покупал здесь и всегда доволен результатом."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://via.placeholder.com/50x50" alt="Пользователь">
+                        <div>
+                            <h4>Иван Петров</h4>
+                            <p>Коллекционер скинов</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 style="color: white;">Готовы начать покупать скины?</h2>
+                <p style="color: white;">Присоединяйтесь к тысячам геймеров, покупающих скины на нашей безопасной площадке</p>
+                <div class="cta-buttons">
+                    <a href="login.html" class="btn btn-primary btn-large">Войти через Steam</a>
+                    <a href="market.html" class="btn btn-outline btn-large">Перейти в маркет</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>SkinMarket</h3>
+                    <p>Ведущая площадка для игровых скинов. Покупайте и обменивайтесь с уверенностью.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Быстрые ссылки</h3>
+                    <ul>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="market.html">Маркет</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Игры</h3>
+                    <ul>
+                        <li><a href="#">CS:GO</a></li>
+                        <li><a href="#">Dota 2</a></li>
+                        <li><a href="#">Rust</a></li>
+                        <li><a href="#">TF2</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Поддержка</h3>
+                    <ul>
+                        <li><a href="#">Центр помощи</a></li>
+                        <li><a href="#">ЧЗВ</a></li>
+                        <li><a href="#">Условия использования</a></li>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Связаться с поддержкой</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 SkinMarket. Все права защищены.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-bitcoin"></i>
+                    <i class="fab fa-ethereum"></i>
+                    <i class="fab fa-cc-apple-pay"></i>
+                    <i class="fab fa-google-pay"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="market.js"></script>
+</body>
+</html> 

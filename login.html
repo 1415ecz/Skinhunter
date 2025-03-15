@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход - SkinMarket</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body class="login-page">
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>SkinMarket</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="market.html">Маркет</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                </ul>
+            </nav>
+            <div class="user-actions">
+                <div class="balance">
+                    <span class="balance-amount">0.00 ₽</span>
+                    <button class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Пополнить</button>
+                </div>
+                <div class="cart">
+                    <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+                </div>
+                <a href="#" class="btn btn-outline active"><i class="fas fa-sign-in-alt"></i> Вход</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="game-nav">
+        <div class="container">
+            <ul class="game-tabs">
+                <li><a href="#" class="active"><img src="https://via.placeholder.com/20x20" alt="CS2"> CS2</a></li>
+                <li><a href="#"><img src="https://via.placeholder.com/20x20" alt="Dota 2"> Dota 2</a></li>
+                <li><a href="#"><img src="https://via.placeholder.com/20x20" alt="Rust"> Rust</a></li>
+                <li><a href="#"><img src="https://via.placeholder.com/20x20" alt="TF2"> TF2</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="login-section">
+        <div class="container">
+            <div class="login-container">
+                <div class="login-card">
+                    <div class="login-header">
+                        <h2>Вход в аккаунт</h2>
+                        <p>Войдите, чтобы получить доступ к покупке скинов</p>
+                    </div>
+                    
+                    <div class="login-options">
+                        <a href="#" class="steam-login">
+                            <img src="фото/steam_logo.svg" alt="Steam Logo">
+                            <span>Войти через Steam</span>
+                        </a>
+                        
+                        <div class="login-divider">
+                            <span>или</span>
+                        </div>
+                        
+                        <form class="login-form">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <div class="input-with-icon">
+                                    <i class="fas fa-envelope"></i>
+                                    <input type="email" id="email" placeholder="Введите ваш email">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="password">Пароль</label>
+                                <div class="input-with-icon">
+                                    <i class="fas fa-lock"></i>
+                                    <input type="password" id="password" placeholder="Введите ваш пароль">
+                                </div>
+                            </div>
+                            
+                            <div class="form-options">
+                                <div class="remember-me">
+                                    <input type="checkbox" id="remember">
+                                    <label for="remember">Запомнить меня</label>
+                                </div>
+                                <a href="#" class="forgot-password">Забыли пароль?</a>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-full">Войти</button>
+                        </form>
+                    </div>
+                    
+                    <div class="login-footer">
+                        <p>Еще нет аккаунта? <a href="#">Зарегистрироваться</a></p>
+                    </div>
+                </div>
+                
+                <div class="login-benefits">
+                    <h3>Преимущества аккаунта</h3>
+                    <ul class="benefits-list">
+                        <li>
+                            <i class="fas fa-tag"></i>
+                            <div>
+                                <h4>Эксклюзивные скидки</h4>
+                                <p>Получайте доступ к специальным предложениям и акциям</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-history"></i>
+                            <div>
+                                <h4>История покупок</h4>
+                                <p>Отслеживайте все ваши транзакции в одном месте</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-bell"></i>
+                            <div>
+                                <h4>Уведомления о скинах</h4>
+                                <p>Получайте уведомления о новых скинах и снижении цен</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <h4>Безопасные транзакции</h4>
+                                <p>Все ваши платежи защищены современными технологиями</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="login-faq">
+        <div class="container">
+            <h2>Часто задаваемые вопросы</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Как войти через Steam?</h3>
+                    <p>Нажмите на кнопку "Войти через Steam" и следуйте инструкциям. Вы будете перенаправлены на официальный сайт Steam для авторизации.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Безопасно ли входить через Steam?</h3>
+                    <p>Да, мы используем официальный API Steam для авторизации. Мы никогда не получаем доступ к вашему паролю от Steam.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Что делать, если я забыл пароль?</h3>
+                    <p>Нажмите на ссылку "Забыли пароль?" и следуйте инструкциям для сброса пароля через вашу электронную почту.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Как создать аккаунт?</h3>
+                    <p>Нажмите на ссылку "Зарегистрироваться" внизу формы входа и заполните необходимые поля для создания нового аккаунта.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>SkinMarket</h3>
+                    <p>Ведущая площадка для игровых скинов. Покупайте и обменивайтесь с уверенностью.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Быстрые ссылки</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="market.html">Маркет</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Игры</h3>
+                    <ul>
+                        <li><a href="#">CS:GO</a></li>
+                        <li><a href="#">Dota 2</a></li>
+                        <li><a href="#">Rust</a></li>
+                        <li><a href="#">TF2</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Поддержка</h3>
+                    <ul>
+                        <li><a href="#">Центр помощи</a></li>
+                        <li><a href="#">ЧЗВ</a></li>
+                        <li><a href="#">Условия использования</a></li>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Связаться с поддержкой</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 SkinMarket. Все права защищены.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-bitcoin"></i>
+                    <i class="fab fa-ethereum"></i>
+                    <i class="fab fa-cc-apple-pay"></i>
+                    <i class="fab fa-google-pay"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="market.js"></script>
+</body>
+</html> 
